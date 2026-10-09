@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Garment QC Buddy BD — বাংলা গার্মেন্টস কোয়ালিটি গাইড, মেজারমেন্ট কনভার্টার, QC চেকলিস্ট ও ইন্টারভিউ প্রস্তুতি।">
+<meta name="theme-color" content="#123b32">
+<title>Garment QC Buddy BD | গার্মেন্টস কোয়ালিটি সহকারী</title>
+<style>
+:root{--green:#123b32;--green2:#1b5b49;--lime:#c8ef79;--cream:#f6f7f0;--ink:#17231f;--muted:#64736c;--line:#dce4dc;--white:#fff;--red:#b83b3b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:system-ui,-apple-system,"Noto Sans Bengali","Hind Siliguri",sans-serif;line-height:1.55}
+header{background:var(--green);color:white;padding:16px max(18px,calc((100% - 1120px)/2));display:flex;align-items:center;justify-content:space-between;gap:18px;position:sticky;top:0;z-index:5;box-shadow:0 3px 16px #10251f22}
+.brand{font-weight:850;font-size:1.05rem;letter-spacing:.2px}.brand span{color:var(--lime)}nav{display:flex;gap:14px;flex-wrap:wrap}nav a{color:#eaf4e9;text-decoration:none;font-size:.9rem}nav a:hover{color:var(--lime)}
+main{max-width:1120px;margin:auto;padding:22px 18px 50px}.hero{background:linear-gradient(125deg,#123b32,#1e6550);border-radius:24px;padding:clamp(24px,5vw,54px);color:white;display:grid;grid-template-columns:1.4fr .8fr;gap:24px;align-items:center;overflow:hidden}
+.eyebrow{color:var(--lime);font-weight:750;font-size:.82rem;text-transform:uppercase;letter-spacing:1px}.hero h1{font-size:clamp(2rem,4.5vw,3.6rem);line-height:1.15;margin:12px 0}.hero p{color:#e0eee5;max-width:620px}.hero-art{border:1px solid #ffffff30;border-radius:22px;padding:20px;background:#ffffff0b}.hero-art .big{font-size:4rem}.hero-art div{font-weight:750;font-size:1.15rem}.hero-art small{color:#d6e8dc}
+.btn{border:0;background:var(--lime);color:#193326;border-radius:12px;padding:12px 17px;font-weight:800;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px}.btn.secondary{background:white;color:var(--green);border:1px solid var(--line)}.btn.dark{background:var(--green);color:white}.btn:hover{filter:brightness(.96)}.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:32px 0 14px}.section-head h2{margin:0;font-size:1.55rem}.section-head p{margin:0;color:var(--muted);font-size:.92rem}
+.tools{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.tool-card,.panel{background:white;border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:0 6px 22px #1a35240a}.tool-card .emoji{font-size:1.7rem}.tool-card h3{margin:9px 0 5px}.tool-card p{color:var(--muted);font-size:.92rem;margin:0 0 14px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}.panel h3{margin:0 0 12px}.field{display:flex;flex-direction:column;gap:6px;margin:10px 0}.field label{font-size:.9rem;font-weight:700}.field input,.field select,.field textarea{width:100%;padding:11px 12px;border:1px solid #cbd7ce;border-radius:10px;background:#fff;font:inherit;color:var(--ink)}.field textarea{min-height:95px;resize:vertical}.result{padding:12px 14px;background:#edf6e4;border:1px solid #d7e8c8;border-radius:12px;margin-top:12px;font-weight:700}.muted{color:var(--muted);font-size:.88rem}.checklist{display:grid;gap:9px}.check{display:flex;gap:10px;align-items:flex-start;padding:10px;border-radius:10px;background:#f7f9f5}.check input{margin-top:5px;accent-color:var(--green);width:17px;height:17px}.check label{flex:1}.pill{display:inline-block;border-radius:999px;background:#e8f2df;color:#28513d;padding:3px 9px;font-size:.78rem;font-weight:750}.qa{border:1px solid var(--line);border-radius:12px;margin:10px 0;overflow:hidden}.qa button{width:100%;text-align:left;background:#f8faf6;border:0;padding:13px 15px;font:inherit;font-weight:750;cursor:pointer;color:var(--ink);display:flex;justify-content:space-between;gap:10px}.answer{padding:13px 15px;color:#45554c;display:none}.answer.open{display:block}.notice{background:#fff6df;border:1px solid #f0dfac;border-radius:14px;padding:14px 16px;color:#5f4c1d;font-size:.9rem;margin-top:16px}
+footer{background:#102f28;color:#d8e6dc;padding:25px 18px;text-align:center;font-size:.88rem}footer a{color:var(--lime)}
+#toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#172d25;color:white;padding:10px 16px;border-radius:10px;display:none;z-index:10}
+@media(max-width:760px){header{align-items:flex-start;flex-direction:column;position:static}nav{gap:10px}.hero{grid-template-columns:1fr}.hero-art{display:none}.tools{grid-template-columns:1fr}.grid2{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">🧵 Garment <span>QC Buddy BD</span></div>
+  <nav aria-label="প্রধান নেভিগেশন">
+    <a href="#tools">টুলস</a><a href="#checklist">QC চেকলিস্ট</a><a href="#defects">ডিফেক্ট গাইড</a><a href="#interview">ইন্টারভিউ</a>
+  </nav>
+</header>
+<main>
+<section class="hero">
+  <div>
+    <div class="eyebrow">বাংলায় শিখুন · কাজে লাগান</div>
+    <h1>গার্মেন্টস কোয়ালিটি,<br>এখন আরও সহজ।</h1>
+    <p>Sample QC, measurement, common defects আর interview preparation—এক জায়গায়। প্রতিদিনের কাজে দ্রুত reference হিসেবে ব্যবহার করুন।</p>
+    <a class="btn" href="#tools">টুলস ব্যবহার করুন ↓</a>
+    <a class="btn secondary" href="#checklist" style="margin-left:7px">চেকলিস্ট দেখুন</a>
+  </div>
+  <div class="hero-art"><div class="big">📏 🪡</div><div>Measure. Inspect. Improve.</div><small>আপনার দৈনন্দিন QC companion</small><hr style="border-color:#ffffff30"><div>✓ Measurement</div><div>✓ Defect reference</div><div>✓ Interview practice</div></div>
+</section>
+
+<div class="section-head" id="tools"><div><h2>দ্রুত QC টুলস</h2><p>মোবাইল থেকেই ব্যবহার করুন</p></div><span class="pill">Free tools</span></div>
+<section class="tools">
+  <article class="tool-card"><div class="emoji">📐</div><h3>ইঞ্চি ↔ সেন্টিমিটার</h3><p>Measurement দ্রুত কনভার্ট করুন।</p><a class="btn dark" href="#converter">কনভার্ট করুন</a></article>
+  <article class="tool-card"><div class="emoji">🧾</div><h3>Sample QC checklist</h3><p>Inspection-এর সময় গুরুত্বপূর্ণ পয়েন্ট টিক দিন।</p><a class="btn dark" href="#checklist">চেকলিস্ট খুলুন</a></article>
+  <article class="tool-card"><div class="emoji">🪡</div><h3>Common defect guide</h3><p>সাধারণ garment defect ও কী পরীক্ষা করবেন।</p><a class="btn dark" href="#defects">গাইড দেখুন</a></article>
+</section>
+
+<div class="section-head" id="converter"><div><h2>Measurement Converter</h2><p>১ inch = ২.৫৪ cm</p></div></div>
+<section class="panel">
+ <div class="grid2">
+  <div><div class="field"><label for="inch">ইঞ্চি (inch)</label><input id="inch" type="number" min="0" step="any" placeholder="যেমন 32"></div><button class="btn dark" id="toCm">সেন্টিমিটারে রূপান্তর</button><div class="result" id="cmResult" aria-live="polite">ফলাফল এখানে দেখাবে</div></div>
+  <div><div class="field"><label for="cm">সেন্টিমিটার (cm)</label><input id="cm" type="number" min="0" step="any" placeholder="যেমন 81.28"></div><button class="btn dark" id="toIn">ইঞ্চিতে রূপান্তর</button><div class="result" id="inResult" aria-live="polite">ফলাফল এখানে দেখাবে</div></div>
+ </div>
+ <p class="muted">নোট: production/spec sheet-এর tolerance ও rounding rule buyer-এর approved specification অনুযায়ী অনুসরণ করুন।</p>
+</section>
+
+<div class="section-head" id="checklist"><div><h2>Sample QC Checklist</h2><p>চেক করা পয়েন্টগুলো মার্ক করুন</p></div><button class="btn secondary" id="resetChecks">রিসেট</button></div>
+<section class="panel">
+ <div class="muted" id="progress">0 / 12 সম্পন্ন</div><div style="height:8px;background:#e8eee8;border-radius:99px;margin:10px 0 16px;overflow:hidden"><div id="bar" style="height:100%;width:0;background:#347657;transition:width .2s"></div></div>
+ <div class="checklist" id="checks">
+  <div class="check"><input type="checkbox" id="c1"><label for="c1">Approved sample / buyer comments মিলিয়ে দেখা</label></div>
+  <div class="check"><input type="checkbox" id="c2"><label for="c2">Measurement chart অনুযায়ী সব POM মাপা</label></div>
+  <div class="check"><input type="checkbox" id="c3"><label for="c3">Fabric shade, hand-feel ও visible fabric defects দেখা</label></div>
+  <div class="check"><input type="checkbox" id="c4"><label for="c4">Stitch density, SPI ও seam quality পরীক্ষা</label></div>
+  <div class="check"><input type="checkbox" id="c5"><label for="c5">Skipped stitch, broken stitch, open seam নেই</label></div>
+  <div class="check"><input type="checkbox" id="c6"><label for="c6">Waistband, belt loop, fly ও button/zipper পরীক্ষা</label></div>
+  <div class="check"><input type="checkbox" id="c7"><label for="c7">Pocket position, shape ও symmetry দেখা</label></div>
+  <div class="check"><input type="checkbox" id="c8"><label for="c8">Hemming, bottom opening ও leg balance পরীক্ষা</label></div>
+  <div class="check"><input type="checkbox" id="c9"><label for="c9">Label, care label, size label ও placement যাচাই</label></div>
+  <div class="check"><input type="checkbox" id="c10"><label for="c10">Trims/accessories approved standard অনুযায়ী</label></div>
+  <div class="check"><input type="checkbox" id="c11"><label for="c11">Thread trimming, stain, hole ও workmanship পরীক্ষা</label></div>
+  <div class="check"><input type="checkbox" id="c12"><label for="c12">Comments, measurements ও findings record করা</label></div>
+ </div>
+ <div class="field"><label for="notes">Inspection notes (ঐচ্ছিক)</label><textarea id="notes" placeholder="Style no., sample type, defect/comment..."></textarea></div>
+ <button class="btn dark" id="copyReport">চেকলিস্ট রিপোর্ট কপি করুন</button>
+ <p class="muted">এটি একটি সাধারণ reference checklist; buyer/factory SOP ও sample type অনুযায়ী পয়েন্ট যোগ-বিয়োগ করুন।</p>
+</section>
+
+<div class="section-head" id="defects"><div><h2>Common Garment Defects</h2><p>দ্রুত reference guide</p></div></div>
+<section class="panel">
+ <div class="grid2">
+  <div><span class="pill">Sewing</span><h3>Skipped stitch / Broken stitch</h3><p>সেলাইয়ের ধারাবাহিকতা, seam strength ও stitch formation পরীক্ষা করুন।</p></div>
+  <div><span class="pill">Measurement</span><h3>Out of tolerance</h3><p>সঠিক measuring method, garment position এবং approved spec/tolerance পুনরায় যাচাই করুন।</p></div>
+  <div><span class="pill">Appearance</span><h3>Shade variation</h3><p>একই lighting condition-এ panels/garments তুলনা করুন এবং approved shade standard দেখুন।</p></div>
+  <div><span class="pill">Workmanship</span><h3>Puckering / Uneven seam</h3><p>Seam tension, fabric handling, stitch density এবং seam alignment পরীক্ষা করুন।</p></div>
+  <div><span class="pill">Trims</span><h3>Wrong / missing label</h3><p>Artwork, size, placement, spelling এবং buyer-approved trim sheet মিলিয়ে নিন।</p></div>
+  <div><span class="pill">Finishing</span><h3>Stain / Untrimmed thread</h3><p>Final visual check-এ stains, loose threads, holes এবং finishing consistency দেখুন।</p></div>
+ </div>
+ <div class="notice">Defect-এর severity ও accept/reject সিদ্ধান্ত buyer standard, approved sample, safety requirements এবং factory SOP অনুযায়ী নিন। এই গাইড buyer-specific acceptance rule নয়।</div>
+</section>
+
+<div class="section-head" id="interview"><div><h2>QC Interview Practice</h2><p>বাংলা ও সহজ ইংরেজিতে প্রস্তুতি</p></div></div>
+<section class="panel">
+ <div class="qa"><button aria-expanded="false">১. Sample QC-এর কাজ কী? <span>＋</span></button><div class="answer">Sample QC-এর কাজ হলো approved sample, buyer comments, measurement specification, workmanship, fabric ও trims পরীক্ষা করে deviation নথিভুক্ত করা এবং সংশ্লিষ্ট টিমকে জানানো।</div></div>
+ <div class="qa"><button aria-expanded="false">২. Inline ও final inspection-এর পার্থক্য কী? <span>＋</span></button><div class="answer">Inline inspection sewing/production চলাকালে defect দ্রুত ধরতে সাহায্য করে। Final inspection সাধারণত finished goods প্রস্তুত হওয়ার পর buyer/factory procedure অনুযায়ী করা হয়।</div></div>
+ <div class="qa"><button aria-expanded="false">৩. AQL কী? <span>＋</span></button><div class="answer">AQL মানে Acceptance Quality Limit। Sampling inspection-এ sample size ও acceptance/rejection number নির্ধারণে ব্যবহৃত একটি sampling-system ধারণা। সঠিক plan পেতে applicable standard, lot size, inspection level ও defect classification জানতে হয়।</div></div>
+ <div class="qa"><button aria-expanded="false">৪. Measurement out হলে কী করবেন? <span>＋</span></button><div class="answer">প্রথমে approved measurement method ও spec যাচাই করব, পুনরায় মাপ নেব, deviation record করব এবং সংশ্লিষ্ট pattern/technical/merchandising team-কে জানিয়ে approval ছাড়া নিজে থেকে spec পরিবর্তন করব না।</div></div>
+ <div class="qa"><button aria-expanded="false">৫. Buyer comment কীভাবে follow করবেন? <span>＋</span></button><div class="answer">প্রতিটি comment বুঝে লিখিতভাবে track করব, sample-এ সংশোধন হয়েছে কি না যাচাই করব এবং প্রয়োজন হলে updated sample/photo/measurement দিয়ে closure নিশ্চিত করব।</div></div>
+ <div class="qa"><button aria-expanded="false">৬. How do you handle a quality issue? <span>＋</span></button><div class="answer">“I identify the defect, verify it against the approved specification, record the finding, inform the responsible team, and follow up on corrective action.”</div></div>
+</section>
+
+<div class="notice"><strong>শুরু করার আগে:</strong> এই সাইটে কোনো login বা backend নেই। চেকলিস্টের তথ্য সার্ভারে পাঠানো হয় না; পেজ রিফ্রেশ করলে checkbox reset হতে পারে। এখানে দেওয়া তথ্য সাধারণ শিক্ষামূলক reference, factory/buyer SOP-এর বিকল্প নয়।</div>
+</main>
+<footer>
+ <strong>Garment QC Buddy BD</strong> · Made for garment quality learners in Bangladesh<br>
+ <span>শিক্ষামূলক রিসোর্স • নির্দিষ্ট buyer-এর official standard নয়</span><br><br>
+ <a href="#tools">উপরে যান ↑</a>
+</footer>
+<div id="toast" role="status"></div>
+<script>
+const $=id=>document.getElementById(id);
+function showToast(msg){const t=$('toast');t.textContent=msg;t.style.display='block';setTimeout(()=>t.style.display='none',2200)}
+$('toCm').addEventListener('click',()=>{const v=parseFloat($('inch').value);$('cmResult').textContent=Number.isFinite(v)&&v>=0?`${v} inch = ${(v*2.54).toFixed(2)} cm`:'সঠিক একটি ধনাত্মক মান লিখুন';});
+$('toIn').addEventListener('click',()=>{const v=parseFloat($('cm').value);$('inResult').textContent=Number.isFinite(v)&&v>=0?`${v} cm = ${(v/2.54).toFixed(2)} inch`:'সঠিক একটি ধনাত্মক মান লিখুন';});
+const checks=[...document.querySelectorAll('#checks input[type=checkbox]')];
+function updateProgress(){const n=checks.filter(c=>c.checked).length;$('progress').textContent=`${n} / ${checks.length} সম্পন্ন`; $('bar').style.width=(n/checks.length*100)+'%'}
+checks.forEach(c=>c.addEventListener('change',updateProgress));
+$('resetChecks').addEventListener('click',()=>{checks.forEach(c=>c.checked=false);updateProgress();showToast('চেকলিস্ট রিসেট হয়েছে');});
+$('copyReport').addEventListener('click',async()=>{const lines=checks.map(c=>`${c.checked?'[✓]':'[ ]'} ${document.querySelector(`label[for="${c.id}"]`).textContent}`);const report='Garment QC Buddy BD — Sample QC Checklist\n'+lines.join('\n')+'\n\nInspection notes:\n'+$('notes').value;try{await navigator.clipboard.writeText(report);showToast('রিপোর্ট কপি হয়েছে');}catch(e){const ta=document.createElement('textarea');ta.value=report;document.body.appendChild(ta);ta.select();document.execCommand('copy');ta.remove();showToast('রিপোর্ট কপি হয়েছে');}});
+document.querySelectorAll('.qa button').forEach(b=>b.addEventListener('click',()=>{const a=b.nextElementSibling;const open=a.classList.toggle('open');b.setAttribute('aria-expanded',String(open));b.querySelector('span').textContent=open?'−':'＋';}));
+</script>
+</body></html>
